@@ -38,6 +38,7 @@ public class ProductController {
     return ResponseEntity.status(HttpStatus.OK).body(productServicePort.findById(id));
   }
 
+  // apenas via de teste para o lazygit
   @GetMapping
   public ResponseEntity<List<ProductDto>> findAll() {
     return ResponseEntity.status(HttpStatus.OK).body(productServicePort.findAll());
